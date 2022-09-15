@@ -40,6 +40,7 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 .buttons{
@@ -73,8 +74,12 @@ button{
     cursor: pointer;
 }
 
+.equals:hover{
+    background-color: greenyellow;
+}
+
 .clear:hover,.delete:hover{
-    background-color: rgba(255, 0, 0, 0.306);
+    background-color: rgba(255, 103, 103, 0.753);
 }
 
 .numbers{
