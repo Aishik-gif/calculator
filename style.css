@@ -19,6 +19,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background:
+  radial-gradient(circle at 100% 50%, transparent 20%, #00D4F0 21%,
+    #00D4F0 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, #00D4F0 21%, #00D4F0 34%, transparent 35%, transparent) 0 -50px;
+background-color: #EEEEEE;
+background-size: 75px 100px;
 }
 
 .container{
@@ -29,13 +35,14 @@ body{
     justify-content: center;
     align-items: center;
     background-color: gray;
+    border-radius: 5px;
 }
 
 .screen{
     width: 330px;
     height: 80px;
     padding: 15px;
-    background-color: antiquewhite;
+    background-color: rgb(236, 250, 255);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -47,7 +54,6 @@ body{
     width: 360px;
     height: 380px;
     margin-top: 15px;
-    /* background-color: aliceblue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +63,6 @@ body{
 .row{
     width: 100%;
     height: 100%;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
 }
@@ -92,6 +97,13 @@ button{
     opacity: 0.7;
 }
 
+.line1{
+    width: fit-content;
+    text-align: end;
+}
+
 .line2{
     font-size: 2.5rem;
+    width: fit-content;
+    text-align: end;
 }
