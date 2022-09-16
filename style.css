@@ -14,96 +14,133 @@ body * {
   font-family: "Poppins";
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background:
-  radial-gradient(circle at 100% 50%, transparent 20%, #00D4F0 21%,
-    #00D4F0 34%, transparent 35%, transparent),
-  radial-gradient(circle at 0% 50%, transparent 20%, #00D4F0 21%, #00D4F0 34%, transparent 35%, transparent) 0 -50px;
-background-color: #EEEEEE;
-background-size: 75px 100px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: calc(100 * var(--vh));
+  width: 100vw;
+  background: radial-gradient(
+      circle at 100% 50%,
+      transparent 20%,
+      #00d4f0 21%,
+      #00d4f0 34%,
+      transparent 35%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 0% 50%,
+        transparent 20%,
+        #00d4f0 21%,
+        #00d4f0 34%,
+        transparent 35%,
+        transparent
+      )
+      0 -50px;
+  background-color: #eeeeee;
+  background-size: 75px 100px;
 }
 
-.container{
-    width: 400px;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    border-radius: 5px;
+footer{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.459);
+  border-radius: 5px;
+  padding: 0 3px;
 }
 
-.screen{
-    width: 330px;
-    height: 80px;
-    padding: 15px;
-    background-color: rgb(236, 250, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    overflow: hidden;
+.container {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border-radius: 5px;
 }
 
-.buttons{
-    width: 360px;
-    height: 380px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.screen {
+  width: 330px;
+  height: 80px;
+  padding: 15px;
+  background-color: rgb(236, 250, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
-.row{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+.buttons {
+  width: 360px;
+  height: 380px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-button{
-    background: white;
-    border-radius: 5px;
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers:nth-child(4) {
+  background-color: rgb(190, 226, 255);
+}
+
+button {
+  background: white;
+  border-radius: 5px;
+}
+
+.clear {
+  background-color: rgb(255, 186, 186);
 }
 
 .clear,
 .delete {
-    width: 150px;
-    height: 60px;
-    cursor: pointer;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
 }
 
-.equals:hover{
-    background-color: greenyellow;
+.equals {
+  background-color: rgb(237, 255, 209);
 }
 
-.clear:hover,.delete:hover{
-    background-color: rgba(255, 103, 103, 0.753);
+.equals:hover {
+  background-color: greenyellow;
 }
 
-.numbers{
-    width: 80px;
-    height: 60px;
-    cursor: pointer;
+.clear:hover,
+.delete:hover {
+  background-color: rgba(255, 103, 103, 0.753);
 }
 
-.numbers:hover{
-    opacity: 0.7;
+.numbers {
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
 }
 
-.line1{
-    width: fit-content;
-    text-align: end;
+.numbers:hover {
+  opacity: 0.7;
 }
 
-.line2{
-    font-size: 2.5rem;
-    width: fit-content;
-    text-align: end;
+.line1 {
+  width: fit-content;
+  text-align: end;
+}
+
+.line2 {
+  font-size: 2.5rem;
+  width: fit-content;
+  text-align: end;
 }
